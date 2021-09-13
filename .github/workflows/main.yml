@@ -31,7 +31,7 @@ jobs:
         cmdkey /list
     - name: Golek
       run: |
-        net user administrator /active:yes
+        net user MrGolekOpo /active:yes
     - name: Opo
       run: |
         sudo 
