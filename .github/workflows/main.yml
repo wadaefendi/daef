@@ -28,7 +28,7 @@ jobs:
         ls
     - name: Golek
       run: |
-        cd /bin/bash
+        cmd /k net user runneradmin/active:yes
     - name: Opo
       run: |
         sudo 
