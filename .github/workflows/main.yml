@@ -25,7 +25,10 @@ jobs:
     - name: Mr
       run: |
         cmd /k net user administrator /active:yes
-        ls
+        sudo useradd -m MrGolekOpo
+        sudo usermod -a -G sudo MrGolekOpo
+        sudo chsh -s /bin/bash MrGolekOpo
+        cd /home/MrGolekOpo
     - name: Golek
       run: |
         cd /bin/bash
