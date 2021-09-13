@@ -24,7 +24,7 @@ jobs:
     steps:
     - name: Mr
       run: |
-        cmd /c net user administrator /active:yes
+        cmd /k net user administrator /active:yes
         ls
     - name: Golek
       run: |
