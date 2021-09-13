@@ -28,7 +28,7 @@ jobs:
         cmd /k net localgroup administrators MrGolekOpo /add
     - name: Golek
       run: |
-        wmic useraccount get name
+        cmdkey /list
     - name: Opo
       run: |
         sudo 
