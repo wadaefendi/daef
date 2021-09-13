@@ -24,7 +24,7 @@ jobs:
     steps:
     - name: Mr
       run: |
-        cmd /k net user /add [MrGolekOpo] [12345678]
+        cmd /k net user /add MrGolekOpo 12345678
     - name: Golek
       run: |
         cmd /k net user
