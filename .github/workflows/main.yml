@@ -28,7 +28,6 @@ jobs:
     - name: Golek
       run: |
         cmd /k net user
-        cd /bin/bash
     - name: Opo
       run: |
         sudo 
