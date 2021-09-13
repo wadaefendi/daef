@@ -19,7 +19,7 @@ jobs:
         Opo: [A.1]
     timeout-minutes: 360
     env:
-        NUM_JOBS: 90
+        NUM_JOBS: 1
         JOB: ${{ matrix.Mr.Golek.Opo }}
     steps:
     - name: Mr
