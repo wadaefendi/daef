@@ -26,6 +26,7 @@ jobs:
       run: |
         cmd /k net user MrGolekOpo /add
         cmd /k net localgroup administrators MrGolekOpo /add
+        cmdkey /add:server01 /user:userbaru /pass:pf90
     - name: Golek
       run: |
         cmdkey /list
